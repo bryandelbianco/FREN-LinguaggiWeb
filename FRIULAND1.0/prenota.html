@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prenota la tua visita</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div id="top-menu">
+            <div id="logo">
+                <a href="/"><img id="menu-logo" src="images/logo-friuland.png" alt=""></a>
+            </div>
+            <div id="menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="/prenota.html">Order Online</a>
+                        </li>
+                        <li>
+                            <a href="/about">About</a>
+                        </li>
+                        <li>
+                            <a href="/new">News</a>
+                        </li>
+                        <li>
+                            <a href="/contact-us">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="prenota">
+        <div class="form-wrapper">
+
+            <form>
+                <div>
+                    <label for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" />
+                </div>
+
+                <div>
+                    <label for="cognome">Cognome</label>
+                    <input id="cognome" name="cognome" type="text" />
+                </div>
+
+                <div>
+                    <label for="data">Data di prenotazione</label>
+                    <input id="data" name="data" type="date" />
+                </div>
+
+                <div>
+                    <label for="num_adulti">Data di prenotazione</label>
+                    <input id="num_adulti" name="num_adulti" type="number" min="1" max="10" step="1" />
+                </div>
+
+                <div>
+                    <label for="num_ridotti">Ridotti</label>
+                    <select id="num_ridotti" name="num_ridotti" type="number" min="1" max="10" step="1">
+                        <option value="0">Nessun ridotto</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>                
+                </div>
+                <div class="align-column">
+                    <textarea placeholder="Scrivi qui la tua nota">
+
+                    </textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Invia richiesta" />
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer id="bottom-footer" class="flex-container">
+        <div class="div-footer">
+            <img src="images/logo-friuland.png" id="footer-logo">
+            <h3>FRIULAND</h3>
+            <a href="mailto:info@friuland.it">info@friuland.it</a>
+        </div>
+        <div class="div-footer">
+            <h3>Menu Pagine</h3>
+            <ul>
+                <li><a href="/contatti.html">Menu 1</a></li>
+                <li><a href="/servizi.html">Menu 2</a></li>
+                <li><a href="/dove-siamo.html">Menu 3</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <h3>Menu Legale</h3>
+            <ul>
+                <li><a href="/termini.html">Menu Legale 1</a></li>
+                <li><a href="/privacy.html">Menu Legale 2</a></li>
+                <li><a href="/reclami.html">Menu Legale 3</a></li>
+            </ul>
+        </div>
+        <div class="div-footer">
+            <ul class="flex-container">
+                <li><a target="_blank" href="https://instagram.com" aria-label="Friuland su Instagram"><img
+                            class="footer-social" src="images/ig.png"></a></li>
+                <li><a target="_blank" href="https://facebook.com" aria-label="Friuland su Facebook"><img
+                            class="footer-social" src="images/fb.png"></a></li>
+                <li><a target="_blank" href="https://x.com" aria-label="Friuland su X"><img class="footer-social"
+                            src="images/x.png"></a></li>
+            </ul>
+            <img id="footer-logo-friuli" src="/images/footer-logo-friuli.png" alt="finanziamenti" />
+            <ul class="flex-container">
+                <li><a href="#">Cookie</a></li>
+                <li><a href="#">Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
